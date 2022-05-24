@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="bloco">
+        <form id="formulario" method="GET" action="cadastroEnviado.html">
+            <h1>Crie uma conta</h1>
+
+            <input id="nome" type="text" name="nome" placeholder="Nome Completo" required>
+            <br>
+            <input id="usuario" type="text" name="usuario" placeholder="Nome de Usuário" required>
+            <input id="idade" type="text" name="idade" placeholder="Data de Nascimento" maxlength="10" required>
+            <br>
+            <input id="email" type="email" name="email" placeholder="E-mail" required>
+            <br>
+            <input id="senha" type="password" name="password" placeholder="Senha" required>
+            <input id="confirmSenha" type="password" name="password" placeholder="Confirme a Senha" required>
+            <br>
+
+            <p id="termo">Ao se cadastrar, você concorda com nossos <br>
+                <a href="#">Termos</a>, <a href="#">Política de Dados</a> e <a href="#">Política de Cookies</a>.
+            </p>
+
+            <br>
+            <div id="enviar">
+                <input id="btnEnviar" type="submit" value="Cadastrar">
+            </div>
+
+            <div id="msg"></div>
+            <br>
+        </form>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
